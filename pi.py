@@ -17,10 +17,12 @@ def main():
 	else:
 		print("Undefined input")
 
+# Estimate the error of the approximation 
 # N - total number of darts thrown
 # R - radius of circle
 # S - number of rounds for statistics
 # output - output file
+# (Requires python3.6 or greater)
 def stat(N = 100, R = 10, S = 100, output = 'stat.png'):
 	avgs, errs = [0]*N, [0]*N
 
@@ -40,11 +42,12 @@ def stat(N = 100, R = 10, S = 100, output = 'stat.png'):
 	plt.errorbar(np.arange(1,N+1),avgs,yerr=errs, fmt='o', label = 'Estimation')
 	plt.plot(np.arange(1,N+1),[3.14159]*N,'r--', label='True value')
 	plt.legend()
-	plt.xlabel('Number of darts thrown')
-	plt.ylabel('Estimated value of pi')
+	plt.xlabel('Number of darts thrown each round')
+	plt.ylabel('Estimated value of pi with estimated error')
 	plt.savefig(output)
 	print("Output saved in " + output)
 
+# Throw darts, take pictures, make a movie out of it!
 # N - number of darts thrown
 # R - radius of circle
 # output - output movie file

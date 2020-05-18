@@ -1,4 +1,8 @@
 # Bootstrap error estimation
+# Requires python3.6 or newer for random.choice()
+
+import random
+import math
 
 # Estimate the average values of functions of independent statistical samples, with an estimate of the error
 # lst - list of values

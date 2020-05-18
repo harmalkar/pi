@@ -48,7 +48,7 @@ def stat(N = 100, R = 10, S = 100, output = 'stat.png'):
 # N - number of darts thrown
 # R - radius of circle
 # output - output movie file
-def movie(N = 100, R = 10, output = 'pi.mp4'):
+def movie(N = 100, R = 10, output = 'movie.mp4'):
 	hits = 0.0
 	estimates = []
 	errors = []

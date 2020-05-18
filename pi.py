@@ -115,6 +115,7 @@ def movie(N = 100, R = 10, output = 'movie.mp4'):
 	print()
 	print("Creating video...")
 	os.system('ffmpeg -r 30 -i out/pi%02d.png -vcodec libx264 -crf 25 -pix_fmt yuv420p -y -hide_banner -loglevel panic ' + output)
+	# Can also use imagemagick package to create a gif using convert -delay 10 out/pi%02d.png movie.gif
 	print("Output saved in " + output)
 
 def throw_dart(R):

@@ -1,5 +1,5 @@
 # pi
-I wrote this code to introduce physics majors to coding in Python. By throwing darts randomly at a square with a circular dartboard inscribed in it, you can quickly estimate the value of π:
+I wrote this code to introduce physics majors to coding in Python and bootstrap error estimation. By throwing darts randomly at a square with a circular dartboard inscribed in it, you can quickly estimate the value of π:
 
 <p align="center">
 <img src="https://github.com/harmalkar/pi/blob/master/movie.gif?raw=true"></img>
